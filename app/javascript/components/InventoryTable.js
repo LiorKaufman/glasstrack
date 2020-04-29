@@ -123,7 +123,7 @@ class InventoryTable extends React.Component {
       var disc_beer    =  act_emp_beer - exp_emp_beer
       var disc_wine    =  act_emp_wine - exp_emp_wine
     return (
-      <React.Fragment>
+      <>
         <div className='inventory-table mt-5'>
         <Table className="table table-hover table-bordered">
            <thead className='inventory-top-row'>
@@ -197,7 +197,7 @@ class InventoryTable extends React.Component {
                 <button type="button" id='submit-button' className="btn btn-dark" onClick={this.handleStockChange}>Submit</button>
             </form>
         </div>
-      </React.Fragment>
+      </>
     );
   }
 }
