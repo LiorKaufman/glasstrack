@@ -1,10 +1,9 @@
 <div class="row mx-auto login-background">
   <div class="col-md-4 login-container mx-auto p-3 my-auto">
-    <h2>Log in</h2>
+    <div>
     <p>
-        For testing purposes we currently only have 2 users
-       
-        </p>
+        For testing purposes we currently only have 2 users   
+    </p>
     <ul>
       <li>has full access</li>
       <li>Username: manager@glasstrack.com </li> 
@@ -12,11 +11,12 @@
     </ul>
     <ul>
       <li>access only the POS page</li>
-      <li>Username:      user@glasstrack.com
- </li> 
-      <li>password:         user01
-</li>
+      <li>Username: user@glasstrack.com</li> 
+      <li>password: user01 </li>
     </ul>
+    </div>
+    <h2>Log in</h2>
+    
     <%= form_for(resource, as: resource_name, url: session_path(resource_name), class: "form-horizontal") do |f| %>
       <div class="form-group">
         <%= f.label :email, class: "font-weight-bold" %><br />
